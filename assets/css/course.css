@@ -1,0 +1,67 @@
+#header-wrapper {
+    padding: 20px 10px;
+    background: black;
+  }
+  
+  body{text-decoration: none;
+    color:white;
+    height:2500px;
+    background-color: black;
+    overflow: scroll;
+  }
+
+  #header-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+   #header-wrapper div {
+    width: 25%;
+   }
+  h1 {
+    margin-top: 0px;
+    
+  }
+  
+  .btn-info:focus {
+    outline: 0px;
+  }
+  
+  .mainContent {
+    background:black;
+    padding: 20px 10px;
+  }
+  
+  .mainContent .bookDetails {
+    background: black;
+    padding: 20px 10px;
+  }
+  
+  .bookDetails img {
+    width: 500px;
+    height: 200px;
+  }
+  
+  .mainContent .list-unstyled li {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .mainContent .list-unstyled li .bookDetails li {
+    border: 0px;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  .bookDetails ul li em {
+    font-weight: 800;
+  }
+  
+  .bookDetails p {
+    margin: 10px 0;
+  }
+  
+  .bookDetails .bookCover {
+    width: 200px;
+    height: 200px;
+  }

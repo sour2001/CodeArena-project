@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>CODEARENA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='title'>
+  <span>
+    
+  </span>
+  <br>
+  <span>
+    
+  </span>
+</div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div></div>
+    
+    
+    <div class="collapse navbar-collapse " id="headbar">
+      <ul  id="headlist">
+        
+        <li><a href="#about" id="home">HOME</a></li>
+        <li><a href="#sites">SITES</a></li>        
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="books">BOOKS</a></li>
+        <li><a href="/users/help">MORE</a></li>
+      </ul>
+   </div>
+    
+  </div>
+</nav>
+<h1 class="animate__animated animate__backInDown">
+<div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="animate-charcter"> CodeArena</h3>
+        </div>
+      </div>
+    </div>
+  </h1> 
+<br>
+    
+<div id="about" class="jumbotron text-center">
+  
+ 
+  
+  <p id="detail">We provide contest details that are currently being  active on coding platform  codechef,leetcode,codeforces,atcoder
+      to improve your programming skills and to increase
+    your score on those platform along
+     with contest and win prizes we also provide 
+     leading courses regarding programming from top 
+     websites and you will also get special discount if you buy from our website
+     and we also provide best selling coding 
+     books all over the world</p> 
+  <form> 
+    <div class="input-group" id="know">
+      <div class="input-group-btn">
+
+        <a href="/users/help"  class="btn"  >Know more</a>
+      </div>
+    </div>
+  </form>
+</div>
+<br><br><br>
+<div class="container" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h3 class="animate-charcter"> Platforms</h3><
+    </div>
+  </div>
+</div>
+
+ <h2 style="font-weight: 10;color: skyblue;">.</h2>
+ 
+<!-- Container (Services Section) -->
+<div id="sites" >
+ 
+  <!-- <h4>What we offer</h4> -->
+  <br>
+  
+    <div class="col-sm-3">
+      <a href="/codechef" >
+<img src="data:image/png;base64,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" style="width:200px;height: 200px; ">
+        
+        <h4 id="send" class="btn btn-default pull-right" style="margin-left:25%">CODECHEF</h4>
+       
+      </a>
+    
+    </div>
+    <div class="col-sm-3">
+      <a href="/codeforces">
+       <img src="data:image/png;base64,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" style="width:200px;height: 200px;">
+       <h4 id="send" class="btn btn-default pull-right" style="margin-left:25.5%">CODEFORCES</h4>
+      </a>
+      <!-- <p>Lorem ipsum dolor sit amet..</p> -->
+    </div>
+    <div class="col-sm-3">
+      <a href="/leetcode" style="color:black">
+        <img src="data:image/png;base64,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" style="width:200px" a="atcoder icon">
+        <h4 id="send" class="btn btn-default pull-right" style="margin-left:25%">CODECHEF</h4>
+      </a>
+      <!-- <p>Lorem ipsum dolor sit amet..</p> -->
+    </div>
+    <div class="col-sm-3">
+      <a href="atcoder" style="color:black">
+        <img src="https://img.atcoder.jp/assets/atcoder.png" style="width:200px" a="atcoder icon">
+        <h4 id="send" class="btn btn-default pull-right" style="margin-left:25%">ATCODER</h4>
+      </a>
+      <!-- <p>Lorem ipsum dolor sit amet..</p> -->
+    </div>
+  </div>
+
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">&nbsp;&emsp;
+        <h3 class="animate-charcter"> Contact</h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-5">
+
+    <p style="color:WHITE"><span class="glyphicon glyphicon-map-marker"></span> Delhi, India</p>      
+    </div>
+    <div class="col-sm-7 slideanim">
+      <p style="color:WHITE;">Contact us and we'll get back to you within 24 hours.</p>
+      <form  action="https://formsubmit.co/dahiya.sourabh444@gmail.com" method="POST">
+
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <p id="noti"></p>
+            <button id="send" class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </form>
+    </div> 
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter"> Made by Sourabh Dahiya</h3>
+      </div>
+    </div>
+  </div>
+  <h5  id="credit"></h5>
+</footer>
+
+<section>
+  <div class="at-at">
+    <div class="at-at-content">
+      <div class="at-at-body">
+        <div class="at-at-head">
+          <div class="at-at-neck">
+            <div class="neck-ribs">
+              <div class="neck-cable-first"></div>
+              <div class="neck-cable-second"></div>
+              <div class="neck-cable-last"></div>
+              <i></i><i></i><i></i><i></i>
+            </div>
+            <div class="neck-bg"></div>
+          </div>
+          <div class="head-bg">
+            <div class="head-snout">
+              <div class="in-head-snout"></div>
+              <div class="head-snout-gun"></div>
+            </div>
+            <i class="head-bg-first"></i>
+            <i class="head-bg-second"></i>
+          </div>
+          <div class="head">
+            <div class="head-chin">
+              <i class="head-chin-bg-first"></i>
+              <i class="head-chin-bg-second"></i>
+              <i class="head-gun"></i>
+              <i class="fire"><i></i><i></i><i></i></i>
+            </div>
+          </div>
+          <i class="head-left-bg"></i>
+          <i class="head-top-bg"></i>
+        </div>
+        <div class="at-at-body-left">
+          <i class="at-at-body-left-bg-1"></i>
+          <i class="at-at-body-left-bg-2"></i>
+          <i class="at-at-body-left-bg-3"></i>
+          <i class="at-at-body-left-bg-4"></i>
+          <i class="at-at-body-left-bg-5"></i>
+          <div class="at-at-body-left-bg"></div>
+        </div>
+        <div class="at-at-body-right">
+          <i class="at-at-body-right-bg-1"></i>
+          <i class="at-at-body-right-bg-2"></i>
+          <i class="at-at-body-right-bg-3"></i>
+          <i class="at-at-body-right-bg-4"></i>
+          <i class="at-at-body-right-bg-5"></i>
+          <div class="at-at-body-right-bg"></div>
+        </div>
+        <div class="at-at-body-bottom">
+          <div class="at-at-body-bottom-bg"><i></i><i></i><i></i></div>
+          <div class="body-bottom-left"></div>
+        </div>
+        <div class="at-at-body-bg">
+          <i></i><i></i><i></i><i></i>
+          <div class="i"></div>
+        </div>
+        <div class="at-at-body-bg-first-block">
+          <i class="at-at-body-bg-first-block-item-1"></i>
+          <i class="at-at-body-bg-first-block-item-2"></i>
+          <i class="at-at-body-bg-first-block-item-3"></i>
+        </div>
+        <div class="at-at-body-bg-second-block">
+          <i class="at-at-body-bg-second-block-item-1"></i>
+          <i class="at-at-body-bg-second-block-item-2"></i>
+        </div>
+        <div class="at-at-body-bg-third-block">
+          <i class="at-at-body-bg-third-block-item-1"></i>
+          <i class="at-at-body-bg-third-block-item-2"></i>
+          <i class="at-at-body-bg-third-block-item-3"></i>
+        </div>
+      </div>
+      <div class="dark-bg">
+        <i class="dark-bg-right"></i>
+      </div>
+    </div>
+    <div class="leg-content leg-front">
+      <div class="leg-first-joint"><i></i></div>
+      <div class="leg-first">
+        <i class="leg-first-hr-a"></i>
+        <i class="leg-first-hr-b"></i>
+        <div class="in-first-leg">
+          <div class="leg-second-joint"><i></i></div>
+          <div class="leg-second">
+            <i class="leg-second-hr"></i>
+            <div class="in-second-leg">
+              <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+              <div class="foot-ankle-bottom"></div>
+              <div class="foot-ankle-space"></div>
+              <div class="foot">
+                <div class="foot-bottom"></div>
+                <div class="foot-land"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leg-content leg-rear">
+      <div class="leg-first-joint"><i></i></div>
+      <div class="leg-first">
+        <i class="leg-first-hr-a"></i>
+        <i class="leg-first-hr-b"></i>
+        <div class="in-first-leg">
+          <div class="leg-second-joint"><i></i></div>
+          <div class="leg-second">
+            <i class="leg-second-hr"></i>
+            <div class="in-second-leg">
+              <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+              <div class="foot-ankle-bottom"></div>
+              <div class="foot-ankle-space"></div>
+              <div class="foot">
+                <div class="foot-bottom"></div>
+                <div class="foot-land"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leg-content leg-front-back">
+      <div class="leg-first-joint"><i></i></div>
+      <div class="leg-first">
+        <i class="leg-first-hr-a"></i>
+        <i class="leg-first-hr-b"></i>
+        <div class="in-first-leg">
+          <div class="leg-second-joint"><i></i></div>
+          <div class="leg-second">
+            <i class="leg-second-hr"></i>
+            <div class="in-second-leg">
+              <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+              <div class="foot-ankle-bottom"></div>
+              <div class="foot-ankle-space"></div>
+              <div class="foot">
+                <div class="foot-bottom"></div>
+                <div class="foot-land"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="leg-content leg-rear-back">
+      <div class="leg-first-joint"><i></i></div>
+      <div class="leg-first">
+        <i class="leg-first-hr-a"></i>
+        <i class="leg-first-hr-b"></i>
+        <div class="in-first-leg">
+          <div class="leg-second-joint"><i></i></div>
+          <div class="leg-second">
+            <i class="leg-second-hr"></i>
+            <div class="in-second-leg">
+              <div class="foot-joint"><i class="foot-ankle"><i class="foot-ankle-bg"></i></i></div>
+              <div class="foot-ankle-bottom"></div>
+              <div class="foot-ankle-space"></div>
+              <div class="foot">
+                <div class="foot-bottom"></div>
+                <div class="foot-land"></div>
+              </div>						
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  
+  <div class="bg">
+    <i class="star star-1"></i>
+    <i class="star star-2"></i>
+    <i class="star star-3"></i>
+    <i class="star star-4"></i>
+    <i class="star star-5"></i>
+    <i class="star star-6"></i>
+    <i class="star-small star-small-1"></i>
+    <i class="star-small star-small-2"></i>
+    <i class="star-small star-small-3"></i>
+    <i class="star-small star-small-4"></i>
+    <i class="star-small star-small-5"></i>
+    <i class="star-small star-small-6"></i>
+    <i class="star-small star-small-7"></i>
+    <i class="star-small star-small-8"></i>
+    <i class="star-small star-small-9"></i>
+    <i class="star-small star-small-10"></i>
+  </div>
+  <i class="moon"></i>
+  <i class="mountain-first">
+    <i class="mountain-shadow"></i>
+  </i>
+  <i class="mountain-second">
+    <i class="mountain-shadow"></i>
+    <span class="mountain-top"></span>
+  </i>
+  <div class="first-bg">
+    <div class="first-bg-anim">
+      <i class="first"></i>
+      <i class="second"></i>
+      <i class="third"></i>
+      <i class="last"></i>
+    </div>
+    <div class="second-bg-anim">
+      <div class="first-rock-content">
+        <div class="rock-content rock-content-1">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-2">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-3">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-4">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-5">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-6">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+      </div>
+      <div class="second-rock-content">
+        <div class="rock-content rock-content-1">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-2">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-3">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-4">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-5">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+        <div class="rock-content rock-content-6">
+          <i class="rock rock-big rock-1"></i>
+          <i class="rock rock-big rock-2"></i>
+          <i class="rock rock-big rock-3"></i>	
+          <i class="rock rock-middle rock-7"></i>
+          <i class="rock rock-middle rock-8"></i>
+          <i class="rock rock-middle rock-9"></i>
+          <i class="rock rock-middle rock-10"></i>
+          <i class="rock rock-middle rock-11"></i>
+          <i class="rock rock-middle rock-12"></i>
+          <i class="rock rock-middle rock-13"></i>
+          <i class="rock rock-middle rock-14"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space-ship space-ship-small">
+    <i class="space-ship-wing"></i>
+    <i class="space-ship-bg"><i class="space-ship-gun"></i></i>
+  </div>
+  <div class="space-ship space-ship-big">
+    <i class="space-ship-wing"></i>
+    <i class="space-ship-bg"><i class="space-ship-gun"></i></i>
+  </div>
+</section>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    console.log(event);
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      console.log(hash);
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body> 
+</html>

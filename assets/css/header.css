@@ -1,0 +1,39 @@
+
+#list{overflow: hidden;
+    text-decoration: none; 
+   text-decoration: none;
+    display: flex;
+    justify-content: right;
+    margin-right: 15px;
+    list-style-type: none;
+    padding-top: 10px;
+    
+    
+   
+}
+
+
+#list li{text-decoration: none;
+    margin-right: 10px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#list li:hover{
+    background-color: darkred;
+
+}
+
+#detailing{background-color: black;
+   padding:1px;
+}
+#details{margin-top: 15px;
+    margin-right: 15px;
+  
+}
+
+#list li a{
+    color:white;
+    text-decoration: none;
+}
